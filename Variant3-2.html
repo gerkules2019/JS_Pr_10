@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!--Создать файл, добавить обработку события "изменение размера окна". При срабатывании этого метода скрыть с документа 
+все элементы со ссылками (href)-->
+   <head>
+	 <script src="jquery-3.4.1.min.js">
+	 </script>
+	 <script>
+	     $(document).ready(function() {
+		     $(window).resize(function() {
+			     $("[href]").hide();
+			     }); 
+			 });
+	 </script>		 
+   </head>
+   <body>	
+     <h2>Полезные ссылки для путешествий:</h2>
+	 <ul type="circle">
+						  <li type=circle><a href="http://www.booking.com">Booking</a>
+						   - бронирование отелей по всему миру.</li>
+						  <li type=circle><a href="https://www.datscha-booking.com">Datsha</a>
+						   - полезный сайт, где в большом объеме представлены частные объявления о сдаче недвижимости , домов, коттеджей и квартир за границей.</li>
+						  <li type=circle><a href="https://www.autotravel.ru">Autotravel</a>
+						   - любителям путешествовать на своем авто. Маршруты, отзывы.</li>
+						  <li type=circle><a href="https://www.kiddy-land.com">Kiddy</a>
+						   - в дорогу с детьми.</li>
+						  <li type=circle><a href="https://www.obmendomami.ru">Obmendomami</a>
+						   - обмен домами на время отдыха.</li>
+						</ul>
+   </body>
+</html>
